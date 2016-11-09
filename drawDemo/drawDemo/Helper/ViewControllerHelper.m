@@ -33,6 +33,12 @@
     model4.destVc = [radarViewController class];
     [arr addObject:model4];
     
+    ViewControllerModel *model5 = [[ViewControllerModel alloc] init];
+    model5.name = @"隐式动画效果";
+    model5.destVc = [implicitAnimationController class];
+    [arr addObject:model5];
+    
+    
     return arr.copy;
 }
 

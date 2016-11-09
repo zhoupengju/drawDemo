@@ -12,6 +12,7 @@
 #import <Foundation/Foundation.h>
 #import "WaterFlowViewController.h"
 #import "DownLoaderLineController.h"
+#import "implicitAnimationController.h"
 
 @interface ViewControllerHelper : NSObject
 

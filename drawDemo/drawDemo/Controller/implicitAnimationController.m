@@ -64,7 +64,7 @@
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
+     
     // Core Animation是直接作用在CALayer上的.
     CAKeyframeAnimation *keyAnima = [CAKeyframeAnimation animation];
     

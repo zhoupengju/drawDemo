@@ -28,7 +28,7 @@ static NSUInteger indexFlag = 0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(80, 100, 200, 200)];
+    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(90, 100, 200, 200)];
     [self.view addSubview:bgView];
     
     // 如果不添加到view上面, 界面会卡死
@@ -39,9 +39,18 @@ static NSUInteger indexFlag = 0;
     progressView.backgroundColor = [UIColor redColor];
     
     
-    UILabel *labelProgress = [[UILabel alloc] initWithFrame:CGRectMake(20, 90, 160, 20)];
+    UILabel *labelProgress = [[UILabel alloc] initWithFrame:CGRectMake(20, 100, 160, 20)];
     [bgView addSubview:labelProgress];
     self.labelProgress = labelProgress;
+    
+    labelProgress.textAlignment = NSTextAlignmentCenter;
+    
+    UILabel *labelInfo = [[UILabel alloc] initWithFrame:CGRectMake(0, 70, WIDTH, 20)];
+    [self.view addSubview:labelInfo];
+    
+    labelInfo.text = @"下载进度条动态演示";
+//    labelInfo.textColor = [UIColor orangeColor];
+    labelInfo.textAlignment = NSTextAlignmentCenter;
     
     labelProgress.textAlignment = NSTextAlignmentCenter;
 

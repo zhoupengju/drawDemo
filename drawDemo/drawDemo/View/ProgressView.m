@@ -42,9 +42,7 @@
     //3.把路径添加到上下文当中
     CGContextAddPath(ctx, path.CGPath);
     //4.把上下文的内容渲染到View的layer上.
-    CGContextStrokePath(ctx);
-    
-    
+    CGContextStrokePath(ctx); 
 }
 
 

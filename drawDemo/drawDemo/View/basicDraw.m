@@ -156,7 +156,6 @@
     [self.layer addSublayer:shapeLayer];
 }
 
-
 // 这种方式绘制虚线有问题 - 在他后面绘制的图形全部会变成虚线.
 //- (void)drawDottedLine {
 //    

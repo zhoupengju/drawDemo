@@ -11,6 +11,7 @@
 #import "HT_WaterView.h"
 #import "ViewControllerModel.h"
 #import "basicViewController.h"
+#import "radarViewController.h"
 #import <Foundation/Foundation.h>
 #import "WaterFlowViewController.h"
 #import "DownLoaderLineController.h"

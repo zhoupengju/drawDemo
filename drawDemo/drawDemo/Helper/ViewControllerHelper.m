@@ -28,6 +28,11 @@
     model3.destVc = [WaterFlowViewController class];
     [arr addObject:model3];
     
+    ViewControllerModel *model4 = [[ViewControllerModel alloc] init];
+    model4.name = @"雷达和类似水波纹效果";
+    model4.destVc = [radarViewController class];
+    [arr addObject:model4];
+    
     return arr.copy;
 }
 

@@ -25,6 +25,8 @@
 		CB4464CC1DD1CED9000AB4B0 /* WaterFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464CB1DD1CED9000AB4B0 /* WaterFlowViewController.m */; };
 		CB4464CF1DD1CF54000AB4B0 /* HT_WaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464CE1DD1CF54000AB4B0 /* HT_WaterView.m */; };
 		CB4464D11DD1D1CA000AB4B0 /* meNavbg02.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4464D01DD1D1CA000AB4B0 /* meNavbg02.png */; };
+		CB4464D41DD2C159000AB4B0 /* radarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464D31DD2C159000AB4B0 /* radarViewController.m */; };
+		CB4464DA1DD2C290000AB4B0 /* radarDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464D91DD2C290000AB4B0 /* radarDrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,10 @@
 		CB4464CD1DD1CF54000AB4B0 /* HT_WaterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HT_WaterView.h; sourceTree = "<group>"; };
 		CB4464CE1DD1CF54000AB4B0 /* HT_WaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HT_WaterView.m; sourceTree = "<group>"; };
 		CB4464D01DD1D1CA000AB4B0 /* meNavbg02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meNavbg02.png; sourceTree = "<group>"; };
+		CB4464D21DD2C159000AB4B0 /* radarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radarViewController.h; sourceTree = "<group>"; };
+		CB4464D31DD2C159000AB4B0 /* radarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = radarViewController.m; sourceTree = "<group>"; };
+		CB4464D81DD2C290000AB4B0 /* radarDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radarDrawView.h; sourceTree = "<group>"; };
+		CB4464D91DD2C290000AB4B0 /* radarDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = radarDrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +190,8 @@
 				CB4464C81DD1CE52000AB4B0 /* DownLoaderLineController.m */,
 				CB4464CA1DD1CED9000AB4B0 /* WaterFlowViewController.h */,
 				CB4464CB1DD1CED9000AB4B0 /* WaterFlowViewController.m */,
+				CB4464D21DD2C159000AB4B0 /* radarViewController.h */,
+				CB4464D31DD2C159000AB4B0 /* radarViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -217,6 +225,8 @@
 				CB4464A81DD19AFE000AB4B0 /* Quartz2DDraw.m */,
 				CB4464CD1DD1CF54000AB4B0 /* HT_WaterView.h */,
 				CB4464CE1DD1CF54000AB4B0 /* HT_WaterView.m */,
+				CB4464D81DD2C290000AB4B0 /* radarDrawView.h */,
+				CB4464D91DD2C290000AB4B0 /* radarDrawView.m */,
 				CB4464D01DD1D1CA000AB4B0 /* meNavbg02.png */,
 			);
 			path = View;
@@ -356,6 +366,7 @@
 				CB4464B41DD19BF5000AB4B0 /* ViewControllerModel.m in Sources */,
 				CB4464BA1DD19F23000AB4B0 /* basicViewController.m in Sources */,
 				CB4464AB1DD19AFE000AB4B0 /* ViewController.m in Sources */,
+				CB4464D41DD2C159000AB4B0 /* radarViewController.m in Sources */,
 				CB4464C11DD1A290000AB4B0 /* basicDraw.m in Sources */,
 				CB4464C91DD1CE52000AB4B0 /* DownLoaderLineController.m in Sources */,
 				CB4464CC1DD1CED9000AB4B0 /* WaterFlowViewController.m in Sources */,
@@ -365,6 +376,7 @@
 				CB4464AD1DD19AFE000AB4B0 /* Quartz2DDraw.m in Sources */,
 				CB4464681DD17FAE000AB4B0 /* AppDelegate.m in Sources */,
 				CB4464651DD17FAE000AB4B0 /* main.m in Sources */,
+				CB4464DA1DD2C290000AB4B0 /* radarDrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

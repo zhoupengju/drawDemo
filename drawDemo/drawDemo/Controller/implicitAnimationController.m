@@ -30,7 +30,7 @@
 
 #define angle2Radian(angel) ((angel) / 180.0 * M_PI)
 
-@interface implicitAnimationController ()
+@interface implicitAnimationController () 
 
 @property (nonatomic, strong) CALayer *layer;
 

@@ -38,53 +38,128 @@
 
 @implementation implicitAnimationController
 
-#pragma mark - 转场动画
-
-#pragma mark - 关键帧动画
+#pragma mark - 组动画
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.view.backgroundColor = [UIColor whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    
+
     // 创建layer
-    UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+    UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 330, 350)];
     self.customView = customView;
     [self.view addSubview:customView];
-    
-    customView.center = CGPointMake(50, 50);
-    
-    customView.backgroundColor = [UIColor redColor];
-     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 500, 175, 40)];
-    [self.view addSubview:btn];
-    btn.backgroundColor = [UIColor redColor];
-    
-    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+
+    customView.center = CGPointMake(WIDTH/2.0, 200);
+    customView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"1.jpg"]];
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
-    // Core Animation是直接作用在CALayer上的.
-    CAKeyframeAnimation *keyAnima = [CAKeyframeAnimation animation];
-    
-    keyAnima.keyPath = @"position";
-    keyAnima.duration = 5;
 
-    CGMutablePathRef path = CGPathCreateMutable();
-    CGPathAddEllipseInRect(path, NULL, CGRectMake(100, 100, 200, 200));
+    CABasicAnimation *caAni1 = [CABasicAnimation animation];
+    caAni1.keyPath = @"transform.translation.y";
+    caAni1.toValue = @(300);
     
-    keyAnima.path = path;
-    CGPathRelease(path);
+    CABasicAnimation *caAni2 = [CABasicAnimation animation];
+    caAni2.keyPath = @"transform.scale";
+    caAni2.toValue = @(0.0);
     
-    // 观察动画什么时候开始执行, 以及时候执行完毕.
-    keyAnima.delegate = self;
+    CABasicAnimation *caAni3 = [CABasicAnimation animation];
+    caAni3.keyPath = @"transform.rotation";
+    caAni3.toValue = @(2*M_PI);
     
-    keyAnima.removedOnCompletion = NO;
-    keyAnima.fillMode = kCAFillModeForwards;
     
-    [self.customView.layer addAnimation:keyAnima forKey:@"yueyue"];
+    
+    CAAnimationGroup *group = [CAAnimationGroup animation];
+    
+    group.animations = @[caAni1, caAni2, caAni3];
+    group.duration = 3;
+    
+    [self.customView.layer addAnimation:group forKey:nil];
 }
+
+#pragma mark - 转场动画
+//- (void)viewDidLoad {
+//    [super viewDidLoad];
+//    
+//    self.view.backgroundColor = [UIColor whiteColor];
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
+//    
+//    // 创建layer
+//    UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 330, 350)];
+//    self.customView = customView;
+//    [self.view addSubview:customView];
+//    
+//    customView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"1.jpg"]];
+//    customView.center = CGPointMake(WIDTH/2.0, HEIGHT/3.0);
+//}
+//
+//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    
+//    // Core Animation是直接作用在CALayer上的.
+//    CATransition *traAnima = [CATransition animation];
+//    
+////    NSString * const kCATransitionFade;
+////    NSString * const kCATransitionMoveIn;
+////    NSString * const kCATransitionPush;
+////    NSString * const kCATransitionReveal;
+//    traAnima.type = @"cube";
+////    traAnima.type = @"rippleEffect";
+//    traAnima.subtype = kCATransitionFromLeft; // 设置方向
+////    traAnima.startProgress = 0.5; // 从什么地方开始动画
+//    traAnima.endProgress = 0.5;
+//    
+//    traAnima.duration = 3;
+//    
+//    [self.customView.layer addAnimation:traAnima forKey:@"yueyue"];
+//}
+
+
+#pragma mark - 关键帧动画
+//- (void)viewDidLoad {
+//    [super viewDidLoad];
+//    
+//    self.view.backgroundColor = [UIColor whiteColor];
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
+//    
+//    // 创建layer
+//    UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+//    self.customView = customView;
+//    [self.view addSubview:customView];
+//    
+//    customView.center = CGPointMake(50, 50);
+//    
+//    customView.backgroundColor = [UIColor redColor];
+//    
+//    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 500, 175, 40)];
+//    [self.view addSubview:btn];
+//    btn.backgroundColor = [UIColor redColor];
+//    
+//    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+//}
+//
+//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    
+//    // Core Animation是直接作用在CALayer上的.
+//    CAKeyframeAnimation *keyAnima = [CAKeyframeAnimation animation];
+//    
+//    keyAnima.keyPath = @"position";
+//    keyAnima.duration = 5;
+//
+//    CGMutablePathRef path = CGPathCreateMutable();
+//    CGPathAddEllipseInRect(path, NULL, CGRectMake(100, 100, 200, 200));
+//    
+//    keyAnima.path = path;
+//    CGPathRelease(path);
+//    
+//    // 观察动画什么时候开始执行, 以及时候执行完毕.
+//    keyAnima.delegate = self;
+//    
+//    keyAnima.removedOnCompletion = NO;
+//    keyAnima.fillMode = kCAFillModeForwards;
+//    
+//    [self.customView.layer addAnimation:keyAnima forKey:@"yueyue"];
+//}
 
 - (void)btnClick {
 

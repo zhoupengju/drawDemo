@@ -29,6 +29,7 @@
 		CB4464DF1DD2EA34000AB4B0 /* implicitAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464DE1DD2EA34000AB4B0 /* implicitAnimationController.m */; };
 		CB4464E81DD2F16D000AB4B0 /* implicitAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464E71DD2F16D000AB4B0 /* implicitAnimationLayer.m */; };
 		CB4464EB1DD2F19E000AB4B0 /* implicitAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464EA1DD2F19E000AB4B0 /* implicitAnimationView.m */; };
+		CB4464EF1DD31B24000AB4B0 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB4464EE1DD31B24000AB4B0 /* 1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		CB4464E71DD2F16D000AB4B0 /* implicitAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = implicitAnimationLayer.m; sourceTree = "<group>"; };
 		CB4464E91DD2F19E000AB4B0 /* implicitAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = implicitAnimationView.h; sourceTree = "<group>"; };
 		CB4464EA1DD2F19E000AB4B0 /* implicitAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = implicitAnimationView.m; sourceTree = "<group>"; };
+		CB4464EE1DD31B24000AB4B0 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = ../../../../../../Downloads/1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				CB4464661DD17FAE000AB4B0 /* AppDelegate.h */,
 				CB4464671DD17FAE000AB4B0 /* AppDelegate.m */,
 				CB4464DB1DD2C6AF000AB4B0 /* meNavbg02.png */,
+				CB4464EE1DD31B24000AB4B0 /* 1.jpg */,
 				CB4464C31DD1AA8B000AB4B0 /* PrefixHeaderDrawDemo.pch */,
 				CB44646C1DD17FAE000AB4B0 /* Main.storyboard */,
 				CB44646F1DD17FAE000AB4B0 /* Assets.xcassets */,
@@ -349,6 +352,7 @@
 				CB4464701DD17FAE000AB4B0 /* Assets.xcassets in Resources */,
 				CB4464DC1DD2C6AF000AB4B0 /* meNavbg02.png in Resources */,
 				CB44646E1DD17FAE000AB4B0 /* Main.storyboard in Resources */,
+				CB4464EF1DD31B24000AB4B0 /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

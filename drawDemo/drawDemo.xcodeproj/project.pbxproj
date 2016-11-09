@@ -16,7 +16,6 @@
 		CB4464891DD17FAF000AB4B0 /* drawDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464881DD17FAF000AB4B0 /* drawDemoUITests.m */; };
 		CB4464AB1DD19AFE000AB4B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464A11DD19AFE000AB4B0 /* ViewController.m */; };
 		CB4464AC1DD19AFE000AB4B0 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464A61DD19AFE000AB4B0 /* ProgressView.m */; };
-		CB4464AD1DD19AFE000AB4B0 /* Quartz2DDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464A81DD19AFE000AB4B0 /* Quartz2DDraw.m */; };
 		CB4464B11DD19BC6000AB4B0 /* ViewControllerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464B01DD19BC6000AB4B0 /* ViewControllerHelper.m */; };
 		CB4464B41DD19BF5000AB4B0 /* ViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464B31DD19BF5000AB4B0 /* ViewControllerModel.m */; };
 		CB4464BA1DD19F23000AB4B0 /* basicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464B91DD19F23000AB4B0 /* basicViewController.m */; };
@@ -65,8 +64,6 @@
 		CB4464A11DD19AFE000AB4B0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CB4464A51DD19AFE000AB4B0 /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
 		CB4464A61DD19AFE000AB4B0 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
-		CB4464A71DD19AFE000AB4B0 /* Quartz2DDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quartz2DDraw.h; sourceTree = "<group>"; };
-		CB4464A81DD19AFE000AB4B0 /* Quartz2DDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quartz2DDraw.m; sourceTree = "<group>"; };
 		CB4464AF1DD19BC6000AB4B0 /* ViewControllerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerHelper.h; sourceTree = "<group>"; };
 		CB4464B01DD19BC6000AB4B0 /* ViewControllerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerHelper.m; sourceTree = "<group>"; };
 		CB4464B21DD19BF5000AB4B0 /* ViewControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerModel.h; sourceTree = "<group>"; };
@@ -221,8 +218,6 @@
 				CB4464C01DD1A290000AB4B0 /* basicDraw.m */,
 				CB4464A51DD19AFE000AB4B0 /* ProgressView.h */,
 				CB4464A61DD19AFE000AB4B0 /* ProgressView.m */,
-				CB4464A71DD19AFE000AB4B0 /* Quartz2DDraw.h */,
-				CB4464A81DD19AFE000AB4B0 /* Quartz2DDraw.m */,
 				CB4464CD1DD1CF54000AB4B0 /* HT_WaterView.h */,
 				CB4464CE1DD1CF54000AB4B0 /* HT_WaterView.m */,
 				CB4464D81DD2C290000AB4B0 /* radarDrawView.h */,
@@ -373,7 +368,6 @@
 				CB4464AC1DD19AFE000AB4B0 /* ProgressView.m in Sources */,
 				CB4464B11DD19BC6000AB4B0 /* ViewControllerHelper.m in Sources */,
 				CB4464CF1DD1CF54000AB4B0 /* HT_WaterView.m in Sources */,
-				CB4464AD1DD19AFE000AB4B0 /* Quartz2DDraw.m in Sources */,
 				CB4464681DD17FAE000AB4B0 /* AppDelegate.m in Sources */,
 				CB4464651DD17FAE000AB4B0 /* main.m in Sources */,
 				CB4464DA1DD2C290000AB4B0 /* radarDrawView.m in Sources */,

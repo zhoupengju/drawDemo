@@ -55,7 +55,7 @@
     customView.center = CGPointMake(50, 50);
     
     customView.backgroundColor = [UIColor redColor];
-    
+     
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 500, 175, 40)];
     [self.view addSubview:btn];
     btn.backgroundColor = [UIColor redColor];
@@ -64,7 +64,7 @@
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-     
+    
     // Core Animation是直接作用在CALayer上的.
     CAKeyframeAnimation *keyAnima = [CAKeyframeAnimation animation];
     

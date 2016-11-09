@@ -6,7 +6,7 @@
 //  Copyright © 2016年 周鹏钜. All rights reserved.
 //
 
-#import "Quartz2DDraw.h"
+#import "radarDrawView.h"
 #import "radarViewController.h"
 
 @interface radarViewController ()
@@ -18,10 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    Quartz2DDraw *drawView = [[Quartz2DDraw alloc] initWithFrame:self.view.bounds];
+    radarDrawView *drawView = [[radarDrawView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:drawView];
     
-    drawView.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
 }

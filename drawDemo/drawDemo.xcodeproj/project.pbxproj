@@ -23,9 +23,9 @@
 		CB4464C91DD1CE52000AB4B0 /* DownLoaderLineController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464C81DD1CE52000AB4B0 /* DownLoaderLineController.m */; };
 		CB4464CC1DD1CED9000AB4B0 /* WaterFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464CB1DD1CED9000AB4B0 /* WaterFlowViewController.m */; };
 		CB4464CF1DD1CF54000AB4B0 /* HT_WaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464CE1DD1CF54000AB4B0 /* HT_WaterView.m */; };
-		CB4464D11DD1D1CA000AB4B0 /* meNavbg02.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4464D01DD1D1CA000AB4B0 /* meNavbg02.png */; };
 		CB4464D41DD2C159000AB4B0 /* radarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464D31DD2C159000AB4B0 /* radarViewController.m */; };
 		CB4464DA1DD2C290000AB4B0 /* radarDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464D91DD2C290000AB4B0 /* radarDrawView.m */; };
+		CB4464DC1DD2C6AF000AB4B0 /* meNavbg02.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4464DB1DD2C6AF000AB4B0 /* meNavbg02.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,11 +79,11 @@
 		CB4464CB1DD1CED9000AB4B0 /* WaterFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowViewController.m; sourceTree = "<group>"; };
 		CB4464CD1DD1CF54000AB4B0 /* HT_WaterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HT_WaterView.h; sourceTree = "<group>"; };
 		CB4464CE1DD1CF54000AB4B0 /* HT_WaterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HT_WaterView.m; sourceTree = "<group>"; };
-		CB4464D01DD1D1CA000AB4B0 /* meNavbg02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meNavbg02.png; sourceTree = "<group>"; };
 		CB4464D21DD2C159000AB4B0 /* radarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radarViewController.h; sourceTree = "<group>"; };
 		CB4464D31DD2C159000AB4B0 /* radarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = radarViewController.m; sourceTree = "<group>"; };
 		CB4464D81DD2C290000AB4B0 /* radarDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radarDrawView.h; sourceTree = "<group>"; };
 		CB4464D91DD2C290000AB4B0 /* radarDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = radarDrawView.m; sourceTree = "<group>"; };
+		CB4464DB1DD2C6AF000AB4B0 /* meNavbg02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meNavbg02.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +140,7 @@
 				CB4464A41DD19AFE000AB4B0 /* View */,
 				CB4464661DD17FAE000AB4B0 /* AppDelegate.h */,
 				CB4464671DD17FAE000AB4B0 /* AppDelegate.m */,
+				CB4464DB1DD2C6AF000AB4B0 /* meNavbg02.png */,
 				CB4464C31DD1AA8B000AB4B0 /* PrefixHeaderDrawDemo.pch */,
 				CB44646C1DD17FAE000AB4B0 /* Main.storyboard */,
 				CB44646F1DD17FAE000AB4B0 /* Assets.xcassets */,
@@ -222,7 +223,6 @@
 				CB4464CE1DD1CF54000AB4B0 /* HT_WaterView.m */,
 				CB4464D81DD2C290000AB4B0 /* radarDrawView.h */,
 				CB4464D91DD2C290000AB4B0 /* radarDrawView.m */,
-				CB4464D01DD1D1CA000AB4B0 /* meNavbg02.png */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,7 +332,7 @@
 			files = (
 				CB4464731DD17FAE000AB4B0 /* LaunchScreen.storyboard in Resources */,
 				CB4464701DD17FAE000AB4B0 /* Assets.xcassets in Resources */,
-				CB4464D11DD1D1CA000AB4B0 /* meNavbg02.png in Resources */,
+				CB4464DC1DD2C6AF000AB4B0 /* meNavbg02.png in Resources */,
 				CB44646E1DD17FAE000AB4B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

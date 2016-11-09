@@ -72,38 +72,4 @@ static NSString *ID = @"UITableViewCell";
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-//- (void)viewDidLoad {
-//    [super viewDidLoad];
-//    
-//    Quartz2DDraw *draw = [[Quartz2DDraw alloc] initWithFrame:self.view.bounds];
-//    [self.view addSubview:draw];
-//    
-//    draw.backgroundColor = [UIColor whiteColor];
-//    
-//    //    self.view.backgroundColor = [UIColor colorWithRed:86/255.0f green:202/255.0f blue:139/255.0f alpha:1];
-//    //    VWWWaterView *waterView = [[VWWWaterView alloc]initWithFrame:CGRectMake(0, 100, WIDTH, 30)];
-//    //
-//    //    [self.view addSubview:waterView];
-//    
-//    //    [self testShapeLayer];
-//}
-//
-//- (void)testShapeLayer {
-//    
-//    UIBezierPath *path = [UIBezierPath bezierPathWithRect:CGRectMake(50, 50, 100, 50)];
-//    
-//    [path moveToPoint:CGPointMake(50, 250)];
-//    [path addLineToPoint:CGPointMake(250, 250)];
-//    [path setLineWidth:10];
-//    
-//    
-//    [path stroke];
-//    
-//    [[UIColor redColor] set];
-//    
-//    //画扇形
-//    //fill(填充之前,会自动关闭路径)
-//    [path fill];
-//}
-
 @end

@@ -28,6 +28,8 @@
      2. 设置bounds, backgroundColor, position都能引起动画
  */
 
+#define angle2Radian(angel) ((angel) / 180.0 * M_PI)
+
 @interface implicitAnimationController ()
 
 @property (nonatomic, strong) CALayer *layer;
@@ -38,7 +40,24 @@
 
 @implementation implicitAnimationController
 
-#pragma mark - 组动画
+#pragma mark - 图标抖动动画
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    
+    CAKeyframeAnimation *keyAnim = [CAKeyframeAnimation animation];
+    keyAnim.keyPath = @"transform.rotation";
+    keyAnim.values = @[@(-angle2Radian(10)), @(angle2Radian(10)), @(-angle2Radian(10))];
+    
+    keyAnim.removedOnCompletion = NO;
+    keyAnim.fillMode = kCAFillModeForwards;
+    keyAnim.duration = 0.2;
+    
+    keyAnim.repeatCount = MAXFLOAT;
+    
+    [self.customView.layer addAnimation:keyAnim forKey:nil];
+}
+
+#pragma mark - 动画
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -46,37 +65,76 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
 
     // 创建layer
-    UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 330, 350)];
+    UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 330, 400)];
     self.customView = customView;
     [self.view addSubview:customView];
 
-    customView.center = CGPointMake(WIDTH/2.0, 200);
+    customView.center = CGPointMake(WIDTH/2.0, HEIGHT/3.0);
     customView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"1.jpg"]];
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//
+//    [UIView beginAnimations:nil context:nil];
+//    [UIView setAnimationDuration:2.0];
+//    [UIView setAnimationDelegate:self];
+//    [UIView setAnimationWillStartSelector:@selector(kkkkkkkk)];
+//    [UIView setAnimationDidStopSelector:@selector(haahhah)];
+//    self.customView.center = CGPointMake(300, 500);
+//    
+//    [UIView commitAnimations];
+//    
+////    self.customView.center = CGPointMake(80, 80);
+//}
 
-    CABasicAnimation *caAni1 = [CABasicAnimation animation];
-    caAni1.keyPath = @"transform.translation.y";
-    caAni1.toValue = @(300);
-    
-    CABasicAnimation *caAni2 = [CABasicAnimation animation];
-    caAni2.keyPath = @"transform.scale";
-    caAni2.toValue = @(0.0);
-    
-    CABasicAnimation *caAni3 = [CABasicAnimation animation];
-    caAni3.keyPath = @"transform.rotation";
-    caAni3.toValue = @(2*M_PI);
-    
-    
-    
-    CAAnimationGroup *group = [CAAnimationGroup animation];
-    
-    group.animations = @[caAni1, caAni2, caAni3];
-    group.duration = 3;
-    
-    [self.customView.layer addAnimation:group forKey:nil];
+- (void)kkkkkkkk {
+
+    NSLog(@"touchesBegan");
 }
+
+- (void)haahhah {
+
+    NSLog(@"touchesEnd");
+}
+
+#pragma mark - 组动画
+//- (void)viewDidLoad {
+//    [super viewDidLoad];
+//    
+//    self.view.backgroundColor = [UIColor whiteColor];
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
+//    
+//    // 创建layer
+//    UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 330, 350)];
+//    self.customView = customView;
+//    [self.view addSubview:customView];
+//    
+//    customView.center = CGPointMake(WIDTH/2.0, 200);
+//    customView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"1.jpg"]];
+//}
+//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//
+//    CABasicAnimation *caAni1 = [CABasicAnimation animation];
+//    caAni1.keyPath = @"transform.translation.y";
+//    caAni1.toValue = @(300);
+//    
+//    CABasicAnimation *caAni2 = [CABasicAnimation animation];
+//    caAni2.keyPath = @"transform.scale";
+//    caAni2.toValue = @(0.0);
+//    
+//    CABasicAnimation *caAni3 = [CABasicAnimation animation];
+//    caAni3.keyPath = @"transform.rotation";
+//    caAni3.toValue = @(2*M_PI);
+//    
+//    
+//    
+//    CAAnimationGroup *group = [CAAnimationGroup animation];
+//    
+//    group.animations = @[caAni1, caAni2, caAni3];
+//    group.duration = 3;
+//    
+//    [self.customView.layer addAnimation:group forKey:nil];
+//}
 
 #pragma mark - 转场动画
 //- (void)viewDidLoad {

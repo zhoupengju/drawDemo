@@ -48,6 +48,13 @@
     model7.destVc = [radarScanViewController class];
     [arr addObject:model7];
     
+    ViewControllerModel *model8 = [[ViewControllerModel alloc] init];
+    model8.name = @"测试POP框架: https://github.com/facebook/pop. 正在测试中";
+    model8.destVc = [facebookPopController class];
+    [arr addObject:model8];
+    
+    
+    
     return arr.copy;
 }
 

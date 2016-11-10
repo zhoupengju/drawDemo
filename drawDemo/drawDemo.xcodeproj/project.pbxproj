@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36891B62A9F6CAD3E6FAD6B0 /* libPods-drawDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02972D710E90EEC2673675A5 /* libPods-drawDemo.a */; };
 		CB0C66311DD328A100F664A2 /* 1111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB0C66301DD328A100F664A2 /* 1111.jpg */; };
 		CB0C66331DD40E5C00F664A2 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0C66321DD40E5C00F664A2 /* 222.png */; };
 		CB0C66391DD41EED00F664A2 /* radiateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C66381DD41EED00F664A2 /* radiateViewController.m */; };
@@ -15,6 +16,7 @@
 		CB151C421DD44AA800F6595B /* PJRadarIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB151C411DD44AA800F6595B /* PJRadarIndicatorView.m */; };
 		CB151C451DD44AB500F6595B /* PJRadarPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB151C441DD44AB500F6595B /* PJRadarPointView.m */; };
 		CB151C481DD44AC100F6595B /* PJRadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB151C471DD44AC100F6595B /* PJRadarView.m */; };
+		CB151C4B1DD47C0100F6595B /* facebookPopController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB151C4A1DD47C0100F6595B /* facebookPopController.m */; };
 		CB4464651DD17FAE000AB4B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464641DD17FAE000AB4B0 /* main.m */; };
 		CB4464681DD17FAE000AB4B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464671DD17FAE000AB4B0 /* AppDelegate.m */; };
 		CB44646E1DD17FAE000AB4B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB44646C1DD17FAE000AB4B0 /* Main.storyboard */; };
@@ -58,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02972D710E90EEC2673675A5 /* libPods-drawDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-drawDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C4858CB50AADBDD897D4671 /* Pods-drawDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drawDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-drawDemo/Pods-drawDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		476A90247756322A7EBA233C /* Pods-drawDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drawDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-drawDemo/Pods-drawDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CB0C66301DD328A100F664A2 /* 1111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1111.jpg; path = ../../../../../../Downloads/1111.jpg; sourceTree = "<group>"; };
 		CB0C66321DD40E5C00F664A2 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 222.png; path = ../../../../../../Downloads/222.png; sourceTree = "<group>"; };
 		CB0C66371DD41EED00F664A2 /* radiateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radiateViewController.h; sourceTree = "<group>"; };
@@ -72,6 +77,8 @@
 		CB151C441DD44AB500F6595B /* PJRadarPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJRadarPointView.m; sourceTree = "<group>"; };
 		CB151C461DD44AC100F6595B /* PJRadarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJRadarView.h; sourceTree = "<group>"; };
 		CB151C471DD44AC100F6595B /* PJRadarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJRadarView.m; sourceTree = "<group>"; };
+		CB151C491DD47C0100F6595B /* facebookPopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = facebookPopController.h; sourceTree = "<group>"; };
+		CB151C4A1DD47C0100F6595B /* facebookPopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = facebookPopController.m; sourceTree = "<group>"; };
 		CB4464601DD17FAE000AB4B0 /* drawDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drawDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4464641DD17FAE000AB4B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB4464661DD17FAE000AB4B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36891B62A9F6CAD3E6FAD6B0 /* libPods-drawDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +152,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64C14D9E9F7BE51BC19EC339 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C4858CB50AADBDD897D4671 /* Pods-drawDemo.debug.xcconfig */,
+				476A90247756322A7EBA233C /* Pods-drawDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB0A982B06CB05F50638A7EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02972D710E90EEC2673675A5 /* libPods-drawDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB151C3F1DD44A8100F6595B /* PJRadarView */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +189,8 @@
 				CB44647C1DD17FAF000AB4B0 /* drawDemoTests */,
 				CB4464871DD17FAF000AB4B0 /* drawDemoUITests */,
 				CB4464611DD17FAE000AB4B0 /* Products */,
+				64C14D9E9F7BE51BC19EC339 /* Pods */,
+				CB0A982B06CB05F50638A7EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,6 +273,8 @@
 				CB0C663E1DD4249400F664A2 /* radarScanViewController.m */,
 				CB4464DD1DD2EA34000AB4B0 /* implicitAnimationController.h */,
 				CB4464DE1DD2EA34000AB4B0 /* implicitAnimationController.m */,
+				CB151C491DD47C0100F6595B /* facebookPopController.h */,
+				CB151C4A1DD47C0100F6595B /* facebookPopController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,9 +325,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB44648D1DD17FAF000AB4B0 /* Build configuration list for PBXNativeTarget "drawDemo" */;
 			buildPhases = (
+				197FD849AD6E0FB749E64939 /* Check Pods Manifest.lock */,
 				CB44645C1DD17FAE000AB4B0 /* Sources */,
 				CB44645D1DD17FAE000AB4B0 /* Frameworks */,
 				CB44645E1DD17FAE000AB4B0 /* Resources */,
+				4745588E55EBCC0E7CEED05C /* Embed Pods Frameworks */,
+				E72563E726B0D26C1E73D3B5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -418,6 +450,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		197FD849AD6E0FB749E64939 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4745588E55EBCC0E7CEED05C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-drawDemo/Pods-drawDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E72563E726B0D26C1E73D3B5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-drawDemo/Pods-drawDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB44645C1DD17FAE000AB4B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -439,6 +519,7 @@
 				CB151C451DD44AB500F6595B /* PJRadarPointView.m in Sources */,
 				CB4464B11DD19BC6000AB4B0 /* ViewControllerHelper.m in Sources */,
 				CB4464DF1DD2EA34000AB4B0 /* implicitAnimationController.m in Sources */,
+				CB151C4B1DD47C0100F6595B /* facebookPopController.m in Sources */,
 				CB151C481DD44AC100F6595B /* PJRadarView.m in Sources */,
 				CB4464E81DD2F16D000AB4B0 /* implicitAnimationLayer.m in Sources */,
 				CB4464CF1DD1CF54000AB4B0 /* HT_WaterView.m in Sources */,
@@ -581,6 +662,7 @@
 		};
 		CB44648E1DD17FAF000AB4B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C4858CB50AADBDD897D4671 /* Pods-drawDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeaderDrawDemo.pch";
@@ -594,6 +676,7 @@
 		};
 		CB44648F1DD17FAF000AB4B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 476A90247756322A7EBA233C /* Pods-drawDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeaderDrawDemo.pch";

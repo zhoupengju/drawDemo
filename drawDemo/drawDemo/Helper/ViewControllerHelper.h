@@ -9,6 +9,7 @@
 #import "ViewControllerModel.h"
 #import "basicViewController.h"
 #import "radarViewController.h"
+#import "facebookPopController.h"
 #import "radiateViewController.h"
 #import <Foundation/Foundation.h>
 #import "radarScanViewController.h"

@@ -6,12 +6,12 @@
 //  Copyright © 2016年 周鹏钜. All rights reserved.
 //
 
-#import "XHRadarView.h"
+#import "PJRadarView.h"
 #import "radarScanViewController.h"
 
-@interface radarScanViewController () <XHRadarViewDataSource, XHRadarViewDelegate>
+@interface radarScanViewController () <PJRadarViewDataSource, PJRadarViewDelegate>
 
-@property (nonatomic, strong) XHRadarView *radarView;
+@property (nonatomic, strong) PJRadarView *radarView;
 @property (nonatomic, strong) NSArray *pointsArray;
 
 @end
@@ -25,7 +25,7 @@
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
-    XHRadarView *radarView = [[XHRadarView alloc] initWithFrame:self.view.bounds];
+    PJRadarView *radarView = [[PJRadarView alloc] initWithFrame:self.view.bounds];
     radarView.frame = self.view.frame;
     radarView.dataSource = self;
     radarView.delegate = self;
@@ -51,7 +51,7 @@
                      @[@60, @111],
                      @[@-111, @96],
                      @[@150, @145],
-                     @[@25, @144],
+                     @[@225, @144],
                      @[@-55, @110],
                      @[@95, @109],
                      @[@170, @180],
@@ -69,41 +69,49 @@
     labelnfo.numberOfLines = 2;
     labelnfo.textColor = [UIColor orangeColor];
     labelnfo.textAlignment = NSTextAlignmentCenter;
-    labelnfo.text = @"本效果是用了一个github上分享的控件XHRadarView, 感谢作者的开源.";
+    labelnfo.text = @"本效果是参考了一个github上分享的控件XHRadarView写的, 感谢作者的开源.";
 }
 
 #pragma mark - Custom Methods
 - (void)startUpdatingRadar {
+    
     typeof(self) __weak weakSelf = self;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
         weakSelf.radarView.labelText = [NSString stringWithFormat:@"搜索已完成，共找到%lu个目标", (unsigned long)weakSelf.pointsArray.count];
+        
         [weakSelf.radarView show];
     });
 }
 
 #pragma mark - XHRadarViewDataSource
-- (NSInteger)numberOfSectionsInRadarView:(XHRadarView *)radarView {
+- (NSInteger)numberOfSectionsInRadarView:(PJRadarView *)radarView {
+    
     return 4;
 }
-- (NSInteger)numberOfPointsInRadarView:(XHRadarView *)radarView {
+- (NSInteger)numberOfPointsInRadarView:(PJRadarView *)radarView {
+    
     return [self.pointsArray count];
 }
-- (UIView *)radarView:(XHRadarView *)radarView viewForIndex:(NSUInteger)index {
-    UIView *pointView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 120, 25)];
+- (UIView *)radarView:(PJRadarView *)radarView pointForIndex:(NSUInteger)index {
+    
+    UIView *pointView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 35, 36)];
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     [imageView setImage:[UIImage imageNamed:@"point"]];
     [pointView addSubview:imageView];
+    
     return pointView;
 }
-- (CGPoint)radarView:(XHRadarView *)radarView positionForIndex:(NSUInteger)index {
+- (CGPoint)radarView:(PJRadarView *)radarView pointPositionForIndex:(NSUInteger)index {
+    
     NSArray *point = [self.pointsArray objectAtIndex:index];
     return CGPointMake([point[0] floatValue], [point[1] floatValue]);
 }
 
 #pragma mark - XHRadarViewDelegate
-
-- (void)radarView:(XHRadarView *)radarView didSelectItemAtIndex:(NSUInteger)index {
+- (void)radarView:(PJRadarView *)radarView didSelectItemAtIndex:(NSUInteger)index {
+    
     NSLog(@"didSelectItemAtIndex:%lu", (unsigned long)index);
     
 }

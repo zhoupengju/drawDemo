@@ -36,9 +36,7 @@
     [self.view addSubview:radarView];
     _radarView = radarView;
     
-    UIImageView *avatarView = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.center.x-39, self.view.center.y-39, 78, 78)];
-    avatarView.layer.cornerRadius = 39;
-    avatarView.layer.masksToBounds = YES;
+    UIImageView *avatarView = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.center.x-30, self.view.center.y-30, 60, 60)];
     
     [avatarView setImage:[UIImage imageNamed:@"222"]];
     [_radarView addSubview:avatarView];

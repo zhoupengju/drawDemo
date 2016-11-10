@@ -18,6 +18,11 @@
     model1.destVc = [basicViewController class];
     [arr addObject:model1];
     
+    ViewControllerModel *model5 = [[ViewControllerModel alloc] init];
+    model5.name = @"隐式动画效果";
+    model5.destVc = [implicitAnimationController class];
+    [arr addObject:model5];
+    
     ViewControllerModel *model2 = [[ViewControllerModel alloc] init];
     model2.name = @"下载进度条";
     model2.destVc = [DownLoaderLineController class];
@@ -32,11 +37,6 @@
     model4.name = @"雷达和类似水波纹效果";
     model4.destVc = [radarViewController class];
     [arr addObject:model4];
-    
-    ViewControllerModel *model5 = [[ViewControllerModel alloc] init];
-    model5.name = @"隐式动画效果";
-    model5.destVc = [implicitAnimationController class];
-    [arr addObject:model5];
     
     
     return arr.copy;

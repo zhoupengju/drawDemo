@@ -30,7 +30,7 @@
 
 #define angle2Radian(angel) ((angel) / 180.0 * M_PI)
 
-@interface implicitAnimationController () 
+@interface implicitAnimationController ()
 
 @property (nonatomic, strong) CALayer *layer;
 
@@ -42,7 +42,6 @@
 
 #pragma mark - 图标抖动动画
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
     
     CAKeyframeAnimation *keyAnim = [CAKeyframeAnimation animation];
     keyAnim.keyPath = @"transform.rotation";
@@ -60,17 +59,25 @@
 #pragma mark - 动画
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.edgesForExtendedLayout = UIRectEdgeNone;
-
+    
+    UILabel *labelnfo = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, WIDTH, 40)];
+    [self.view addSubview:labelnfo];
+    
+    labelnfo.numberOfLines = 2;
+    labelnfo.textColor = [UIColor orangeColor];
+    labelnfo.textAlignment = NSTextAlignmentCenter;
+    labelnfo.text = @"可以打开或者屏蔽代码, 显示不同的动画效果";
+    
     // 创建layer
-    UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 330, 400)];
+    UIImageView *customView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 140, 130)];
     self.customView = customView;
     [self.view addSubview:customView];
 
-    customView.center = CGPointMake(WIDTH/2.0, HEIGHT/3.0);
-    customView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"1.jpg"]];
+    customView.center = CGPointMake(WIDTH/2.0, 120);
+    customView.image = [UIImage imageNamed:@"222"];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 //-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

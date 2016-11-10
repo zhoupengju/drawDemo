@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CB0C66311DD328A100F664A2 /* 1111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB0C66301DD328A100F664A2 /* 1111.jpg */; };
+		CB0C66331DD40E5C00F664A2 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0C66321DD40E5C00F664A2 /* 222.png */; };
 		CB4464651DD17FAE000AB4B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464641DD17FAE000AB4B0 /* main.m */; };
 		CB4464681DD17FAE000AB4B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464671DD17FAE000AB4B0 /* AppDelegate.m */; };
 		CB44646E1DD17FAE000AB4B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB44646C1DD17FAE000AB4B0 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		CB0C66301DD328A100F664A2 /* 1111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1111.jpg; path = ../../../../../../Downloads/1111.jpg; sourceTree = "<group>"; };
+		CB0C66321DD40E5C00F664A2 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 222.png; path = ../../../../../../Downloads/222.png; sourceTree = "<group>"; };
 		CB4464601DD17FAE000AB4B0 /* drawDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drawDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4464641DD17FAE000AB4B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB4464661DD17FAE000AB4B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				CB4464DB1DD2C6AF000AB4B0 /* meNavbg02.png */,
 				CB4464EE1DD31B24000AB4B0 /* 1.jpg */,
 				CB0C66301DD328A100F664A2 /* 1111.jpg */,
+				CB0C66321DD40E5C00F664A2 /* 222.png */,
 				CB4464C31DD1AA8B000AB4B0 /* PrefixHeaderDrawDemo.pch */,
 				CB44646C1DD17FAE000AB4B0 /* Main.storyboard */,
 				CB44646F1DD17FAE000AB4B0 /* Assets.xcassets */,
@@ -356,6 +359,7 @@
 				CB4464DC1DD2C6AF000AB4B0 /* meNavbg02.png in Resources */,
 				CB44646E1DD17FAE000AB4B0 /* Main.storyboard in Resources */,
 				CB4464EF1DD31B24000AB4B0 /* 1.jpg in Resources */,
+				CB0C66331DD40E5C00F664A2 /* 222.png in Resources */,
 				CB0C66311DD328A100F664A2 /* 1111.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

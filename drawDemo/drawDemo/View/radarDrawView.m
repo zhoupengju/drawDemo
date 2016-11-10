@@ -8,11 +8,6 @@
 
 #import "radarDrawView.h"
 
-/**
- *  核心动画
- 
- */
-
 @implementation radarDrawView
 
 -(void)drawRect:(CGRect)rect {

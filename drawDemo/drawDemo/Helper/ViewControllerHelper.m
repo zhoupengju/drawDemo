@@ -34,10 +34,19 @@
     [arr addObject:model3];
     
     ViewControllerModel *model4 = [[ViewControllerModel alloc] init];
-    model4.name = @"雷达和类似水波纹效果";
-    model4.destVc = [radarViewController class];
+    model4.name = @"雷达放射效果";
+    model4.destVc = [radiateViewController class];
     [arr addObject:model4];
     
+    ViewControllerModel *model6 = [[ViewControllerModel alloc] init];
+    model6.name = @"雷达扩散效果";
+    model6.destVc = [radarViewController class];
+    [arr addObject:model6];
+    
+    ViewControllerModel *model7 = [[ViewControllerModel alloc] init];
+    model7.name = @"雷达扫描效果";
+    model7.destVc = [radarScanViewController class];
+    [arr addObject:model7];
     
     return arr.copy;
 }

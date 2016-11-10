@@ -68,12 +68,19 @@
     labelnfo.textAlignment = NSTextAlignmentCenter;
     labelnfo.text = @"可以打开或者屏蔽代码, 显示不同的动画效果";
     
+    UILabel *labelnfoClick = [[UILabel alloc] initWithFrame:CGRectMake(0, 40, WIDTH, 30)];
+    [self.view addSubview:labelnfoClick];
+
+    labelnfoClick.textColor = [UIColor redColor];
+    labelnfoClick.textAlignment = NSTextAlignmentCenter;
+    labelnfoClick.text = @"请点击屏幕";
+    
     // 创建layer
     UIImageView *customView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 140, 130)];
     self.customView = customView;
     [self.view addSubview:customView];
 
-    customView.center = CGPointMake(WIDTH/2.0, 120);
+    customView.center = CGPointMake(WIDTH/2.0, 150);
     customView.image = [UIImage imageNamed:@"222"];
     
     self.view.backgroundColor = [UIColor whiteColor];
@@ -132,9 +139,7 @@
 //    CABasicAnimation *caAni3 = [CABasicAnimation animation];
 //    caAni3.keyPath = @"transform.rotation";
 //    caAni3.toValue = @(2*M_PI);
-//    
-//    
-//    
+//
 //    CAAnimationGroup *group = [CAAnimationGroup animation];
 //    
 //    group.animations = @[caAni1, caAni2, caAni3];

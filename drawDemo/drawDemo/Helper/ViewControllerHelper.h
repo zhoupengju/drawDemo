@@ -9,7 +9,9 @@
 #import "ViewControllerModel.h"
 #import "basicViewController.h"
 #import "radarViewController.h"
+#import "radiateViewController.h"
 #import <Foundation/Foundation.h>
+#import "radarScanViewController.h"
 #import "WaterFlowViewController.h"
 #import "DownLoaderLineController.h"
 #import "implicitAnimationController.h"

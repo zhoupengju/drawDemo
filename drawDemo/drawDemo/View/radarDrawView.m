@@ -8,6 +8,9 @@
 
 #import "radarDrawView.h"
 
+#define pulsingCount 5
+#define animationDuration 3
+
 @implementation radarDrawView
 
 -(void)drawRect:(CGRect)rect {
@@ -22,52 +25,44 @@
     [[UIColor orangeColor] setFill];
     UIRectFill(rect);
     
-    NSInteger pulsingCount = 5;
-    double animationDuration = 3;
     CALayer * animationLayer = [CALayer layer];
     
     for (int i = 0; i < pulsingCount; i++) {
         
+        // 1. 创建layer, 用于添加隐式动画
         CALayer * pulsingLayer = [CALayer layer];
-        
-        pulsingLayer.frame = CGRectMake(WIDTH/2.0-100, HEIGHT/2.0-200, 200, 200);
+
+        pulsingLayer.frame = CGRectMake(WIDTH/2.0-100, HEIGHT/4.0, 200, 200);
         pulsingLayer.borderColor = [UIColor whiteColor].CGColor;
         pulsingLayer.borderWidth = 1;
         pulsingLayer.cornerRadius = 200 / 2;
         
-        CAMediaTimingFunction *defaultCurve = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
+        // 2. 设置放大效果动画
+        CABasicAnimation * scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+        scaleAnimation.fromValue = @0.8;
+        scaleAnimation.toValue = @1.8;
         
+        // 4. 设置关键帧动画
+        CAKeyframeAnimation * opacityAnimation = [CAKeyframeAnimation animation];
+        opacityAnimation.keyPath = @"opacity";  // 透明动画
+        opacityAnimation.values = @[@1, @0.9, @0.8, @0.7, @0.6, @0.5, @0.4, @0.3, @0.2, @0.1, @0];
+        opacityAnimation.keyTimes = @[@0, @0.1, @0.2, @0.3, @0.4, @0.5, @0.6, @0.7, @0.8, @0.9, @1];
+
+        // 4. 设置组动画
         CAAnimationGroup * animationGroup = [CAAnimationGroup animation];
         animationGroup.fillMode = kCAFillModeBackwards;
         animationGroup.beginTime = CACurrentMediaTime() + (double)i * animationDuration / (double)pulsingCount;
         animationGroup.duration = animationDuration;
         animationGroup.repeatCount = HUGE;
-        animationGroup.timingFunction = defaultCurve;
-        
-        CABasicAnimation * scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-        scaleAnimation.fromValue = @0.8;
-        scaleAnimation.toValue = @1.8;
-        
-        CAKeyframeAnimation * opacityAnimation = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
-        opacityAnimation.values = @[@1, @0.9, @0.8, @0.7, @0.6, @0.5, @0.4, @0.3, @0.2, @0.1, @0];
-        opacityAnimation.keyTimes = @[@0, @0.1, @0.2, @0.3, @0.4, @0.5, @0.6, @0.7, @0.8, @0.9, @1];
-        
+        animationGroup.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
         animationGroup.animations = @[scaleAnimation, opacityAnimation];
-        [pulsingLayer addAnimation:animationGroup forKey:@"plulsing"];
+        
+        // 5. 把设置好的动画添加到layer上
+        [pulsingLayer addAnimation:animationGroup forKey:@"plulsing"];  // 只是做一个标记
         [animationLayer addSublayer:pulsingLayer];
     }
+    
     [self.layer addSublayer:animationLayer];
 }
-
-//- (void)drawLine {
-//    
-//    CGContextRef ctx = UIGraphicsGetCurrentContext();
-//    
-//    CGContextBeginPath(ctx);
-//    
-//    CGContextMoveToPoint(ctx, 100, 100);
-//    CGContextAddLineToPoint(ctx, 300, 300);
-//    CGContextStrokePath(ctx);
-//}
 
 @end

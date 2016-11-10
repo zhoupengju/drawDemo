@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		CB0C66311DD328A100F664A2 /* 1111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB0C66301DD328A100F664A2 /* 1111.jpg */; };
 		CB0C66331DD40E5C00F664A2 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0C66321DD40E5C00F664A2 /* 222.png */; };
+		CB0C66391DD41EED00F664A2 /* radiateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C66381DD41EED00F664A2 /* radiateViewController.m */; };
+		CB0C663C1DD41F6F00F664A2 /* radiateDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C663B1DD41F6F00F664A2 /* radiateDrawView.m */; };
+		CB0C663F1DD4249400F664A2 /* radarScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C663E1DD4249400F664A2 /* radarScanViewController.m */; };
+		CB0C66511DD4271200F664A2 /* XHRadarIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C664C1DD4271200F664A2 /* XHRadarIndicatorView.m */; };
+		CB0C66521DD4271200F664A2 /* XHRadarPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C664E1DD4271200F664A2 /* XHRadarPointView.m */; };
+		CB0C66531DD4271200F664A2 /* XHRadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C66501DD4271200F664A2 /* XHRadarView.m */; };
 		CB4464651DD17FAE000AB4B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464641DD17FAE000AB4B0 /* main.m */; };
 		CB4464681DD17FAE000AB4B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464671DD17FAE000AB4B0 /* AppDelegate.m */; };
 		CB44646E1DD17FAE000AB4B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB44646C1DD17FAE000AB4B0 /* Main.storyboard */; };
@@ -54,6 +60,18 @@
 /* Begin PBXFileReference section */
 		CB0C66301DD328A100F664A2 /* 1111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1111.jpg; path = ../../../../../../Downloads/1111.jpg; sourceTree = "<group>"; };
 		CB0C66321DD40E5C00F664A2 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 222.png; path = ../../../../../../Downloads/222.png; sourceTree = "<group>"; };
+		CB0C66371DD41EED00F664A2 /* radiateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radiateViewController.h; sourceTree = "<group>"; };
+		CB0C66381DD41EED00F664A2 /* radiateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = radiateViewController.m; sourceTree = "<group>"; };
+		CB0C663A1DD41F6F00F664A2 /* radiateDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radiateDrawView.h; sourceTree = "<group>"; };
+		CB0C663B1DD41F6F00F664A2 /* radiateDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = radiateDrawView.m; sourceTree = "<group>"; };
+		CB0C663D1DD4249400F664A2 /* radarScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radarScanViewController.h; sourceTree = "<group>"; };
+		CB0C663E1DD4249400F664A2 /* radarScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = radarScanViewController.m; sourceTree = "<group>"; };
+		CB0C664B1DD4271200F664A2 /* XHRadarIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRadarIndicatorView.h; sourceTree = "<group>"; };
+		CB0C664C1DD4271200F664A2 /* XHRadarIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRadarIndicatorView.m; sourceTree = "<group>"; };
+		CB0C664D1DD4271200F664A2 /* XHRadarPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRadarPointView.h; sourceTree = "<group>"; };
+		CB0C664E1DD4271200F664A2 /* XHRadarPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRadarPointView.m; sourceTree = "<group>"; };
+		CB0C664F1DD4271200F664A2 /* XHRadarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRadarView.h; sourceTree = "<group>"; };
+		CB0C66501DD4271200F664A2 /* XHRadarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRadarView.m; sourceTree = "<group>"; };
 		CB4464601DD17FAE000AB4B0 /* drawDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drawDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4464641DD17FAE000AB4B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB4464661DD17FAE000AB4B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +144,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB0C664A1DD4271200F664A2 /* XHRadarView */ = {
+			isa = PBXGroup;
+			children = (
+				CB0C664B1DD4271200F664A2 /* XHRadarIndicatorView.h */,
+				CB0C664C1DD4271200F664A2 /* XHRadarIndicatorView.m */,
+				CB0C664D1DD4271200F664A2 /* XHRadarPointView.h */,
+				CB0C664E1DD4271200F664A2 /* XHRadarPointView.m */,
+				CB0C664F1DD4271200F664A2 /* XHRadarView.h */,
+				CB0C66501DD4271200F664A2 /* XHRadarView.m */,
+			);
+			name = XHRadarView;
+			path = drawDemo/XHRadarView;
+			sourceTree = SOURCE_ROOT;
+		};
 		CB4464571DD17FAE000AB4B0 = {
 			isa = PBXGroup;
 			children = (
@@ -206,8 +238,12 @@
 				CB4464C81DD1CE52000AB4B0 /* DownLoaderLineController.m */,
 				CB4464CA1DD1CED9000AB4B0 /* WaterFlowViewController.h */,
 				CB4464CB1DD1CED9000AB4B0 /* WaterFlowViewController.m */,
+				CB0C66371DD41EED00F664A2 /* radiateViewController.h */,
+				CB0C66381DD41EED00F664A2 /* radiateViewController.m */,
 				CB4464D21DD2C159000AB4B0 /* radarViewController.h */,
 				CB4464D31DD2C159000AB4B0 /* radarViewController.m */,
+				CB0C663D1DD4249400F664A2 /* radarScanViewController.h */,
+				CB0C663E1DD4249400F664A2 /* radarScanViewController.m */,
 				CB4464DD1DD2EA34000AB4B0 /* implicitAnimationController.h */,
 				CB4464DE1DD2EA34000AB4B0 /* implicitAnimationController.m */,
 			);
@@ -241,12 +277,15 @@
 				CB4464A61DD19AFE000AB4B0 /* ProgressView.m */,
 				CB4464CD1DD1CF54000AB4B0 /* HT_WaterView.h */,
 				CB4464CE1DD1CF54000AB4B0 /* HT_WaterView.m */,
+				CB0C663A1DD41F6F00F664A2 /* radiateDrawView.h */,
+				CB0C663B1DD41F6F00F664A2 /* radiateDrawView.m */,
 				CB4464D81DD2C290000AB4B0 /* radarDrawView.h */,
 				CB4464D91DD2C290000AB4B0 /* radarDrawView.m */,
 				CB4464E61DD2F16D000AB4B0 /* implicitAnimationLayer.h */,
 				CB4464E71DD2F16D000AB4B0 /* implicitAnimationLayer.m */,
 				CB4464E91DD2F19E000AB4B0 /* implicitAnimationView.h */,
 				CB4464EA1DD2F19E000AB4B0 /* implicitAnimationView.m */,
+				CB0C664A1DD4271200F664A2 /* XHRadarView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -388,15 +427,21 @@
 				CB4464B41DD19BF5000AB4B0 /* ViewControllerModel.m in Sources */,
 				CB4464BA1DD19F23000AB4B0 /* basicViewController.m in Sources */,
 				CB4464AB1DD19AFE000AB4B0 /* ViewController.m in Sources */,
+				CB0C663C1DD41F6F00F664A2 /* radiateDrawView.m in Sources */,
 				CB4464D41DD2C159000AB4B0 /* radarViewController.m in Sources */,
 				CB4464C11DD1A290000AB4B0 /* basicDraw.m in Sources */,
+				CB0C663F1DD4249400F664A2 /* radarScanViewController.m in Sources */,
 				CB4464C91DD1CE52000AB4B0 /* DownLoaderLineController.m in Sources */,
 				CB4464CC1DD1CED9000AB4B0 /* WaterFlowViewController.m in Sources */,
+				CB0C66521DD4271200F664A2 /* XHRadarPointView.m in Sources */,
+				CB0C66391DD41EED00F664A2 /* radiateViewController.m in Sources */,
 				CB4464AC1DD19AFE000AB4B0 /* ProgressView.m in Sources */,
 				CB4464EB1DD2F19E000AB4B0 /* implicitAnimationView.m in Sources */,
 				CB4464B11DD19BC6000AB4B0 /* ViewControllerHelper.m in Sources */,
 				CB4464DF1DD2EA34000AB4B0 /* implicitAnimationController.m in Sources */,
 				CB4464E81DD2F16D000AB4B0 /* implicitAnimationLayer.m in Sources */,
+				CB0C66511DD4271200F664A2 /* XHRadarIndicatorView.m in Sources */,
+				CB0C66531DD4271200F664A2 /* XHRadarView.m in Sources */,
 				CB4464CF1DD1CF54000AB4B0 /* HT_WaterView.m in Sources */,
 				CB4464681DD17FAE000AB4B0 /* AppDelegate.m in Sources */,
 				CB4464651DD17FAE000AB4B0 /* main.m in Sources */,

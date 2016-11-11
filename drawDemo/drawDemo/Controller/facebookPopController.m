@@ -20,10 +20,16 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    
-    
-    
+
     // https://github.com/facebook/pop
+    
+    UILabel *labelnfo = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, WIDTH, 60)];
+    [self.view addSubview:labelnfo];
+
+    labelnfo.numberOfLines = 2;
+    labelnfo.textColor = [UIColor orangeColor];
+    labelnfo.textAlignment = NSTextAlignmentCenter;
+    labelnfo.text = @"正在开发中... 敬请期待!";
 }
 
 @end

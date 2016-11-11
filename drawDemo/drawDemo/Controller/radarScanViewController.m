@@ -22,7 +22,6 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
-    
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
     PJRadarView *radarView = [[PJRadarView alloc] initWithFrame:self.view.bounds];
@@ -73,7 +72,7 @@
 }
 
 #pragma mark - Custom Methods
-- (void)startUpdatingRadar {
+- (void)startUpdatingRadar {    // 显示搜索结果和星星
     
     typeof(self) __weak weakSelf = self;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -89,10 +88,12 @@
     
     return 4;
 }
+
 - (NSInteger)numberOfPointsInRadarView:(PJRadarView *)radarView {
     
     return [self.pointsArray count];
 }
+
 - (UIView *)radarView:(PJRadarView *)radarView pointForIndex:(NSUInteger)index {
     
     UIView *pointView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 35, 36)];
@@ -103,6 +104,7 @@
     
     return pointView;
 }
+
 - (CGPoint)radarView:(PJRadarView *)radarView pointPositionForIndex:(NSUInteger)index {
     
     NSArray *point = [self.pointsArray objectAtIndex:index];

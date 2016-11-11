@@ -30,6 +30,7 @@
     for (int i = 0; i < pulsingCount; i++) {
         
         // 1. 创建layer, 用于添加隐式动画
+        // 利用背景为透明, 边框线为白色, 让别人感到一个白色的圈.
         CALayer * pulsingLayer = [CALayer layer];
 
         pulsingLayer.frame = CGRectMake(WIDTH/2.0-100, HEIGHT/4.0, 200, 200);

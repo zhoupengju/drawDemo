@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		36891B62A9F6CAD3E6FAD6B0 /* libPods-drawDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02972D710E90EEC2673675A5 /* libPods-drawDemo.a */; };
-		CB0C66311DD328A100F664A2 /* 1111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB0C66301DD328A100F664A2 /* 1111.jpg */; };
-		CB0C66331DD40E5C00F664A2 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0C66321DD40E5C00F664A2 /* 222.png */; };
 		CB0C66391DD41EED00F664A2 /* radiateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C66381DD41EED00F664A2 /* radiateViewController.m */; };
 		CB0C663C1DD41F6F00F664A2 /* radiateDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C663B1DD41F6F00F664A2 /* radiateDrawView.m */; };
 		CB0C663F1DD4249400F664A2 /* radarScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C663E1DD4249400F664A2 /* radarScanViewController.m */; };
@@ -35,11 +33,12 @@
 		CB4464CF1DD1CF54000AB4B0 /* HT_WaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464CE1DD1CF54000AB4B0 /* HT_WaterView.m */; };
 		CB4464D41DD2C159000AB4B0 /* radarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464D31DD2C159000AB4B0 /* radarViewController.m */; };
 		CB4464DA1DD2C290000AB4B0 /* radarDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464D91DD2C290000AB4B0 /* radarDrawView.m */; };
-		CB4464DC1DD2C6AF000AB4B0 /* meNavbg02.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4464DB1DD2C6AF000AB4B0 /* meNavbg02.png */; };
 		CB4464DF1DD2EA34000AB4B0 /* implicitAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464DE1DD2EA34000AB4B0 /* implicitAnimationController.m */; };
 		CB4464E81DD2F16D000AB4B0 /* implicitAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464E71DD2F16D000AB4B0 /* implicitAnimationLayer.m */; };
 		CB4464EB1DD2F19E000AB4B0 /* implicitAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4464EA1DD2F19E000AB4B0 /* implicitAnimationView.m */; };
-		CB4464EF1DD31B24000AB4B0 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB4464EE1DD31B24000AB4B0 /* 1.jpg */; };
+		CB9729671DD5660900F4E2E9 /* libpop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9729661DD5660900F4E2E9 /* libpop.a */; };
+		CB97296B1DD5674E00F4E2E9 /* meNavbg02.png in Resources */ = {isa = PBXBuildFile; fileRef = CB97296A1DD5674E00F4E2E9 /* meNavbg02.png */; };
+		CB9729701DD5678300F4E2E9 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = CB97296D1DD5678300F4E2E9 /* 222.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +62,6 @@
 		02972D710E90EEC2673675A5 /* libPods-drawDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-drawDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4858CB50AADBDD897D4671 /* Pods-drawDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drawDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-drawDemo/Pods-drawDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		476A90247756322A7EBA233C /* Pods-drawDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drawDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-drawDemo/Pods-drawDemo.release.xcconfig"; sourceTree = "<group>"; };
-		CB0C66301DD328A100F664A2 /* 1111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1111.jpg; path = ../../../../../../Downloads/1111.jpg; sourceTree = "<group>"; };
-		CB0C66321DD40E5C00F664A2 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 222.png; path = ../../../../../../Downloads/222.png; sourceTree = "<group>"; };
 		CB0C66371DD41EED00F664A2 /* radiateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radiateViewController.h; sourceTree = "<group>"; };
 		CB0C66381DD41EED00F664A2 /* radiateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = radiateViewController.m; sourceTree = "<group>"; };
 		CB0C663A1DD41F6F00F664A2 /* radiateDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radiateDrawView.h; sourceTree = "<group>"; };
@@ -116,14 +113,15 @@
 		CB4464D31DD2C159000AB4B0 /* radarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = radarViewController.m; sourceTree = "<group>"; };
 		CB4464D81DD2C290000AB4B0 /* radarDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radarDrawView.h; sourceTree = "<group>"; };
 		CB4464D91DD2C290000AB4B0 /* radarDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = radarDrawView.m; sourceTree = "<group>"; };
-		CB4464DB1DD2C6AF000AB4B0 /* meNavbg02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meNavbg02.png; sourceTree = "<group>"; };
 		CB4464DD1DD2EA34000AB4B0 /* implicitAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = implicitAnimationController.h; sourceTree = "<group>"; };
 		CB4464DE1DD2EA34000AB4B0 /* implicitAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = implicitAnimationController.m; sourceTree = "<group>"; };
 		CB4464E61DD2F16D000AB4B0 /* implicitAnimationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = implicitAnimationLayer.h; sourceTree = "<group>"; };
 		CB4464E71DD2F16D000AB4B0 /* implicitAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = implicitAnimationLayer.m; sourceTree = "<group>"; };
 		CB4464E91DD2F19E000AB4B0 /* implicitAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = implicitAnimationView.h; sourceTree = "<group>"; };
 		CB4464EA1DD2F19E000AB4B0 /* implicitAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = implicitAnimationView.m; sourceTree = "<group>"; };
-		CB4464EE1DD31B24000AB4B0 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = ../../../../../../Downloads/1.jpg; sourceTree = "<group>"; };
+		CB9729661DD5660900F4E2E9 /* libpop.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpop.a; path = "Pods/../build/Debug-iphoneos/libpop.a"; sourceTree = "<group>"; };
+		CB97296A1DD5674E00F4E2E9 /* meNavbg02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meNavbg02.png; sourceTree = "<group>"; };
+		CB97296D1DD5678300F4E2E9 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9729671DD5660900F4E2E9 /* libpop.a in Frameworks */,
 				36891B62A9F6CAD3E6FAD6B0 /* libPods-drawDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +163,7 @@
 		CB0A982B06CB05F50638A7EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB9729661DD5660900F4E2E9 /* libpop.a */,
 				02972D710E90EEC2673675A5 /* libPods-drawDemo.a */,
 			);
 			name = Frameworks;
@@ -214,10 +214,7 @@
 				CB151C3F1DD44A8100F6595B /* PJRadarView */,
 				CB4464661DD17FAE000AB4B0 /* AppDelegate.h */,
 				CB4464671DD17FAE000AB4B0 /* AppDelegate.m */,
-				CB4464DB1DD2C6AF000AB4B0 /* meNavbg02.png */,
-				CB4464EE1DD31B24000AB4B0 /* 1.jpg */,
-				CB0C66301DD328A100F664A2 /* 1111.jpg */,
-				CB0C66321DD40E5C00F664A2 /* 222.png */,
+				CB9729681DD566D800F4E2E9 /* Others */,
 				CB4464C31DD1AA8B000AB4B0 /* PrefixHeaderDrawDemo.pch */,
 				CB44646C1DD17FAE000AB4B0 /* Main.storyboard */,
 				CB44646F1DD17FAE000AB4B0 /* Assets.xcassets */,
@@ -316,6 +313,23 @@
 				CB4464EA1DD2F19E000AB4B0 /* implicitAnimationView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CB9729681DD566D800F4E2E9 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				CB9729691DD566D800F4E2E9 /* images */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		CB9729691DD566D800F4E2E9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CB97296A1DD5674E00F4E2E9 /* meNavbg02.png */,
+				CB97296D1DD5678300F4E2E9 /* 222.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,13 +438,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9729701DD5678300F4E2E9 /* 222.png in Resources */,
 				CB4464731DD17FAE000AB4B0 /* LaunchScreen.storyboard in Resources */,
 				CB4464701DD17FAE000AB4B0 /* Assets.xcassets in Resources */,
-				CB4464DC1DD2C6AF000AB4B0 /* meNavbg02.png in Resources */,
 				CB44646E1DD17FAE000AB4B0 /* Main.storyboard in Resources */,
-				CB4464EF1DD31B24000AB4B0 /* 1.jpg in Resources */,
-				CB0C66331DD40E5C00F664A2 /* 222.png in Resources */,
-				CB0C66311DD328A100F664A2 /* 1111.jpg in Resources */,
+				CB97296B1DD5674E00F4E2E9 /* meNavbg02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +681,10 @@
 				INFOPLIST_FILE = drawDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhoupengju.www.drawDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -683,6 +699,10 @@
 				INFOPLIST_FILE = drawDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhoupengju.www.drawDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

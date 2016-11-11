@@ -106,7 +106,7 @@
         CGContextSetLineWidth(ctx, 1.0);
         CGContextSetRGBStrokeColor(ctx, 1, 1, 1, (1-(float)i/(sectionsNum + 1))*0.5);
         CGContextAddArc(ctx, self.center.x, self.center.y, sectionRadius - 5*(sectionsNum - i - 1), 0, 2*M_PI, 0);
-        CGContextDrawPath(ctx, kCGPathStroke);  // 绘制路线
+        CGContextStrokePath(ctx);
         
         sectionRadius += radius/sectionsNum;  // 计算半径
     }
@@ -178,6 +178,7 @@
         [subView removeFromSuperview];
     }
     
+    // 设置透明度, 显示星星.
     if ([self.dataSource respondsToSelector:@selector(numberOfPointsInRadarView:)]) {
     
         NSUInteger pointsNum = [self.dataSource numberOfPointsInRadarView:self];

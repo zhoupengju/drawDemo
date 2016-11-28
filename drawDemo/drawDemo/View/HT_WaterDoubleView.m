@@ -97,7 +97,6 @@
     frame1.origin.y = frame1.size.height-self.waveHeight;
     frame1.size.height = self.waveHeight;
     _maskWaveLayer.frame = frame1;
-    
 }
 
 - (void)startWaveAnimation{
@@ -118,14 +117,16 @@
     CGFloat width = CGRectGetWidth(self.frame);
     CGFloat height = self.waveHeight;
     
-    //真实浪
+    //真实水流
     CGMutablePathRef path = CGPathCreateMutable();
     CGPathMoveToPoint(path, NULL, 0, height);
     CGFloat y = 0.f;
-    //遮罩浪
+    
+    //遮罩水流
     CGMutablePathRef maskpath = CGPathCreateMutable();
     CGPathMoveToPoint(maskpath, NULL, 0, height);
     CGFloat maskY = 0.f;
+    
     for (CGFloat x = 0.f; x <= width ; x++) {
         y = height * sinf(0.01 * self.waveCurvature * x + self.offset * 0.045);
         CGPathAddLineToPoint(path, NULL, x, y);
@@ -143,6 +144,7 @@
     CGPathAddLineToPoint(path, NULL, width, height);
     CGPathAddLineToPoint(path, NULL, 0, height);
     CGPathCloseSubpath(path);
+    
     self.realWaveLayer.path = path;
     self.realWaveLayer.fillColor = self.realWaveColor.CGColor;
     CGPathRelease(path);
@@ -150,10 +152,10 @@
     CGPathAddLineToPoint(maskpath, NULL, width, height);
     CGPathAddLineToPoint(maskpath, NULL, 0, height);
     CGPathCloseSubpath(maskpath);
+    
     self.maskWaveLayer.path = maskpath;
     self.maskWaveLayer.fillColor = self.maskWaveColor.CGColor;
     CGPathRelease(maskpath);
-    
 }
 
 @end

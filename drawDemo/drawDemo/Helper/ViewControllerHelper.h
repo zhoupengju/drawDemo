@@ -14,6 +14,7 @@
 #import <Foundation/Foundation.h>
 #import "radarScanViewController.h"
 #import "WaterFlowViewController.h"
+#import "WaterFlowDoubleController.h"
 #import "DownLoaderLineController.h"
 #import "implicitAnimationController.h"
 

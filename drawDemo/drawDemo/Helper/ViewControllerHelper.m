@@ -33,6 +33,11 @@
     model3.destVc = [WaterFlowViewController class];
     [arr addObject:model3];
     
+    ViewControllerModel *model9 = [[ViewControllerModel alloc] init];
+    model9.name = @"双波浪效果";
+    model9.destVc = [WaterFlowDoubleController class];
+    [arr addObject:model9];
+    
     ViewControllerModel *model4 = [[ViewControllerModel alloc] init];
     model4.name = @"雷达放射效果";
     model4.destVc = [radiateViewController class];
@@ -52,8 +57,6 @@
     model8.name = @"测试POP框架: https://github.com/facebook/pop. 正在测试中";
     model8.destVc = [facebookPopController class];
     [arr addObject:model8];
-    
-    
     
     return arr.copy;
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		36891B62A9F6CAD3E6FAD6B0 /* libPods-drawDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02972D710E90EEC2673675A5 /* libPods-drawDemo.a */; };
+		CB0004D01DEC1E3800897829 /* WaterFlowDoubleController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0004CF1DEC1E3800897829 /* WaterFlowDoubleController.m */; };
+		CB0004D31DEC1F4000897829 /* HT_WaterDoubleView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0004D21DEC1F4000897829 /* HT_WaterDoubleView.m */; };
 		CB0C66391DD41EED00F664A2 /* radiateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C66381DD41EED00F664A2 /* radiateViewController.m */; };
 		CB0C663C1DD41F6F00F664A2 /* radiateDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C663B1DD41F6F00F664A2 /* radiateDrawView.m */; };
 		CB0C663F1DD4249400F664A2 /* radarScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C663E1DD4249400F664A2 /* radarScanViewController.m */; };
@@ -62,6 +64,10 @@
 		02972D710E90EEC2673675A5 /* libPods-drawDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-drawDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4858CB50AADBDD897D4671 /* Pods-drawDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drawDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-drawDemo/Pods-drawDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		476A90247756322A7EBA233C /* Pods-drawDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drawDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-drawDemo/Pods-drawDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CB0004CE1DEC1E3800897829 /* WaterFlowDoubleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowDoubleController.h; sourceTree = "<group>"; };
+		CB0004CF1DEC1E3800897829 /* WaterFlowDoubleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowDoubleController.m; sourceTree = "<group>"; };
+		CB0004D11DEC1F4000897829 /* HT_WaterDoubleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HT_WaterDoubleView.h; sourceTree = "<group>"; };
+		CB0004D21DEC1F4000897829 /* HT_WaterDoubleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HT_WaterDoubleView.m; sourceTree = "<group>"; };
 		CB0C66371DD41EED00F664A2 /* radiateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radiateViewController.h; sourceTree = "<group>"; };
 		CB0C66381DD41EED00F664A2 /* radiateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = radiateViewController.m; sourceTree = "<group>"; };
 		CB0C663A1DD41F6F00F664A2 /* radiateDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radiateDrawView.h; sourceTree = "<group>"; };
@@ -262,6 +268,8 @@
 				CB4464C81DD1CE52000AB4B0 /* DownLoaderLineController.m */,
 				CB4464CA1DD1CED9000AB4B0 /* WaterFlowViewController.h */,
 				CB4464CB1DD1CED9000AB4B0 /* WaterFlowViewController.m */,
+				CB0004CE1DEC1E3800897829 /* WaterFlowDoubleController.h */,
+				CB0004CF1DEC1E3800897829 /* WaterFlowDoubleController.m */,
 				CB0C66371DD41EED00F664A2 /* radiateViewController.h */,
 				CB0C66381DD41EED00F664A2 /* radiateViewController.m */,
 				CB4464D21DD2C159000AB4B0 /* radarViewController.h */,
@@ -303,6 +311,8 @@
 				CB4464A61DD19AFE000AB4B0 /* ProgressView.m */,
 				CB4464CD1DD1CF54000AB4B0 /* HT_WaterView.h */,
 				CB4464CE1DD1CF54000AB4B0 /* HT_WaterView.m */,
+				CB0004D11DEC1F4000897829 /* HT_WaterDoubleView.h */,
+				CB0004D21DEC1F4000897829 /* HT_WaterDoubleView.m */,
 				CB0C663A1DD41F6F00F664A2 /* radiateDrawView.h */,
 				CB0C663B1DD41F6F00F664A2 /* radiateDrawView.m */,
 				CB4464D81DD2C290000AB4B0 /* radarDrawView.h */,
@@ -520,11 +530,13 @@
 				CB4464AB1DD19AFE000AB4B0 /* ViewController.m in Sources */,
 				CB0C663C1DD41F6F00F664A2 /* radiateDrawView.m in Sources */,
 				CB4464D41DD2C159000AB4B0 /* radarViewController.m in Sources */,
+				CB0004D01DEC1E3800897829 /* WaterFlowDoubleController.m in Sources */,
 				CB4464C11DD1A290000AB4B0 /* basicDraw.m in Sources */,
 				CB0C663F1DD4249400F664A2 /* radarScanViewController.m in Sources */,
 				CB151C421DD44AA800F6595B /* PJRadarIndicatorView.m in Sources */,
 				CB4464C91DD1CE52000AB4B0 /* DownLoaderLineController.m in Sources */,
 				CB4464CC1DD1CED9000AB4B0 /* WaterFlowViewController.m in Sources */,
+				CB0004D31DEC1F4000897829 /* HT_WaterDoubleView.m in Sources */,
 				CB0C66391DD41EED00F664A2 /* radiateViewController.m in Sources */,
 				CB4464AC1DD19AFE000AB4B0 /* ProgressView.m in Sources */,
 				CB4464EB1DD2F19E000AB4B0 /* implicitAnimationView.m in Sources */,

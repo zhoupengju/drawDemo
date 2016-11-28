@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+
+
 @interface HT_WaterView : UIView
+
+@property (nonatomic, assign) CGFloat waveCurvature;
+
 
 @end

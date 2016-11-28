@@ -29,7 +29,6 @@
     //3. 让主窗口显示出来
     [self.window makeKeyAndVisible];
     
-    
     return YES;
 }
 
